@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Simple Calculator</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+	<div class="author">
+		<h2>Simple Calculator usnig HTML, CSS and JAVASCRIPT.</h2>
+	</div>
+	
+	<div class="container" id="total-area">
+		<div class="calculator">
+
+			<form action="" name="form">
+				<input name="display" id="display" value="" class="form-control main-bar" placeholder="0">
+			</form>
+
+			<div class="button-area">
+				<input type="button" onclick="calculate(this.value)" class="btn btn-success" value="7">
+				<input type="button" onclick="calculate(this.value)" class="btn btn-success" value="8">
+				<input type="button" onclick="calculate(this.value)" class="btn btn-success" value="9">
+				<input type="button" onclick="calculate(this.value)" class="btn btn-primary" value="/">
+				<input type="button" onclick="calculate(this.value)" class="btn btn-success" value="4">
+				<input type="button" onclick="calculate(this.value)" class="btn btn-success" value="5">
+				<input type="button" onclick="calculate(this.value)" class="btn btn-success" value="6">
+				<input type="button" onclick="calculate(this.value)" class="btn btn-primary" value="*">
+				<input type="button" onclick="calculate(this.value)" class="btn btn-success" value="1">
+				<input type="button" onclick="calculate(this.value)" class="btn btn-success" value="2">
+				<input type="button" onclick="calculate(this.value)" class="btn btn-success" value="3">
+				<input type="button" onclick="calculate(this.value)" class="btn btn-primary" value="-">
+				<input type="button" onclick="calculate(this.value)" class="btn btn-success" value="0">
+				<input type="button" onclick="calculate(this.value)" class="btn btn-success" value=".">
+				<input type="button" onclick="display.value = eval(display.value)" class="btn btn-info" value="=">
+				<input type="button" onclick="calculate(this.value)" class="btn btn-primary" value="+">
+				<input type="button" onclick="display.value = null" class="btn btn-warning" value="Clear">
+				
+			</div>
+		</div>
+	</div>
+
+
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<script src="custom.js"></script>
+</body>
+</html>
